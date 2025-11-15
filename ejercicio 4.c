@@ -5,12 +5,13 @@ Tarea 2 - Ejercicio 4*/
 
 int main()
 {
-    double a, b;
-    printf("La tasa de interés es del 10%\n");
+    double a, b, tasa;
+    printf("Ingrese la tasa de interés mensual: ");
+    scanf("%lf", &tasa);
     printf("Ingrese la cantidad inicial de dinero: ");
     scanf("%lf", &a);
     
-    b = a * 10 / 100 + a;
+    b = a * tasa / 100 + a;
     
     printf("Monto después de un mes: %.2f", b);
     
